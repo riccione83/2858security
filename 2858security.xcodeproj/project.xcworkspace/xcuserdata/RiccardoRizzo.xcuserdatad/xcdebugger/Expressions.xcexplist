@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[Utils viewDidLoad]:Utils.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view.tag">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[Utils setLoc:]:Utils.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "myPosition.state">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[Utils viewDidAppear:]:Utils.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view.tag">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[Utils sendPreventivo:]:Utils.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "pos.coordinate.latitude">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
