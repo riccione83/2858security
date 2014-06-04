@@ -39,7 +39,7 @@
     
     loc.latitude=37.512324;
     loc.longitude=15.031796;
-    float zoomLevel = 0.005;
+    float zoomLevel = 0.001;
     MKCoordinateRegion region = MKCoordinateRegionMake(loc, MKCoordinateSpanMake(zoomLevel,zoomLevel));
     
     [_myMap setRegion:[_myMap regionThatFits:region] animated:TRUE];
@@ -47,6 +47,7 @@
     MKPointAnnotation *point = [[MKPointAnnotation alloc]init];
     point.coordinate = loc;
     point.title = @"2858 Security S.r.l.";
+    point.subtitle=@"C.so Carlo Marx, 57 - Misterbianco (CT)";
     
     [_myMap addAnnotation:point];
     [_myMap selectAnnotation:point animated:TRUE];

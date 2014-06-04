@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MapKit/MapKit.h>
 #import <MessageUI/MessageUI.h>
 
 @interface preventivo : UIViewController <MFMailComposeViewControllerDelegate,UIGestureRecognizerDelegate,UITextViewDelegate>{

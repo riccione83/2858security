@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
 
-@interface contact : UIViewController <MFMailComposeViewControllerDelegate> {
+@interface contact : UIViewController <MFMailComposeViewControllerDelegate,UIAlertViewDelegate> {
     
 }
 

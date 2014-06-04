@@ -89,8 +89,19 @@
 }
 
 -(IBAction)contactByPhone:(id)sender{
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:+390952858"]];
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Chiama" message:@"Stai per chiamare la 2858 Security allo +390952858. Continuare?" delegate:self cancelButtonTitle:@"Annulla" otherButtonTitles:@"Continua", nil];
+
+    [alert show];
+   
 }
+
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if(buttonIndex==1)
+         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:+390952858"]];
+}
+
 
 /*
 #pragma mark - Navigation
