@@ -73,27 +73,34 @@
 }
 
 
-- (void)torchOnOff: (BOOL) onOff
+- (BOOL)torchOnOff: (BOOL) onOff
 {
     AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     if ([device hasTorch]) {
         [device lockForConfiguration:nil];
         [device setTorchMode: onOff ? AVCaptureTorchModeOn : AVCaptureTorchModeOff];
         [device unlockForConfiguration];
+        return YES;
     }
+    else
+        return NO;
 }
 
 -(IBAction)setTorch:(id)sender{
+    BOOL on = NO;
+    
     led = !led;
-    [self torchOnOff:led];
+    on = [self torchOnOff:led];
     
     UIImage *ingOn = [UIImage imageNamed:@"LOn.png"];
     UIImage *ingOff = [UIImage imageNamed:@"LOff.png"];
     
-    if(led)
-        [ledBtn setImage:ingOn forState:UIControlStateNormal];
-    else
-        [ledBtn setImage:ingOff forState:UIControlStateNormal];
+    if(on){
+        if(led)
+            [ledBtn setImage:ingOn forState:UIControlStateNormal];
+        else
+            [ledBtn setImage:ingOff forState:UIControlStateNormal];
+    }
 }
 
 

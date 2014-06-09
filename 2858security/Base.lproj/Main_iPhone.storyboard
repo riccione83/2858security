@@ -73,7 +73,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="6" rowHeight="65" sectionHeaderHeight="22" sectionFooterHeight="22" id="tAV-W0-tgd">
-                                <rect key="frame" x="20" y="67" width="280" height="305"/>
+                                <rect key="frame" x="20" y="67" width="280" height="350"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.27123145230000001" green="0.68238291849999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" red="0.27123145230000001" green="0.68238291849999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -142,8 +142,8 @@
                                     <action selector="returnToMainView:" destination="Mfq-jP-cIY" eventType="touchUpInside" id="JJ3-hg-QRI"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comunicaci un problema tecnico" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gR1-Bt-FtN">
-                                <rect key="frame" x="31" y="368" width="258" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comunicaci un problema tecnico" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gR1-Bt-FtN">
+                                <rect key="frame" x="0.0" y="368" width="320" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -453,6 +453,7 @@
                         <outlet property="numOfRoom" destination="C36-Ic-kDb" id="FXI-0P-gLL"/>
                         <outlet property="onOffExtern" destination="Acs-Xq-9yT" id="Pz0-Bd-aWz"/>
                         <outlet property="preventivoImage" destination="7gM-Yr-nCd" id="gDl-aJ-Yow"/>
+                        <outlet property="preventivoView" destination="mIi-Vl-Eks" id="AzJ-L1-3TQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BYH-GC-TV9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -483,12 +484,12 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="Z2F-UP-q7g">
-                                <rect key="frame" x="20" y="78" width="280" height="350"/>
+                                <rect key="frame" x="0.0" y="78" width="320" height="240"/>
                                 <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starting..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fb9-lV-Ci9">
-                                <rect key="frame" x="0.0" y="436" width="320" height="21"/>
+                                <rect key="frame" x="0.0" y="335" width="320" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -691,6 +692,13 @@
                                 <rect key="frame" x="20" y="78" width="280" height="188"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qau-kO-fhx">
+                                <rect key="frame" x="0.0" y="49" width="320" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -698,6 +706,7 @@
                     <connections>
                         <outlet property="description" destination="dtz-XC-RNs" id="hHe-Oc-hxl"/>
                         <outlet property="foto" destination="4Yf-Ra-xwt" id="BHi-eK-7KX"/>
+                        <outlet property="lblTitle" destination="qau-kO-fhx" id="wGb-l7-RRz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vsI-z5-iEl" userLabel="First Responder" sceneMemberID="firstResponder"/>

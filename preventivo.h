@@ -19,6 +19,7 @@
 @property (strong, nonatomic) IBOutlet UISwitch *onOffExtern;
 @property (strong, nonatomic) IBOutlet UISwitch *impiantoPresente;
 @property (strong, nonatomic) IBOutlet UITextView *description;
+@property (strong, nonatomic) IBOutlet UIView *preventivoView;
 
 -(IBAction)sendPreventivo:(id)sender;
 -(IBAction)returnToMainView:(id)sender;

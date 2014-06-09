@@ -70,13 +70,17 @@
     rowSelected = [indexPath row];
     [self performSegueWithIdentifier:@"showRecipeDetail" sender:self];
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    rowSelected = [indexPath row];
+    [self performSegueWithIdentifier:@"showRecipeDetail" sender:self];
+}
+
 -(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
-   // rowSelected = [indexPath row];
-  //  rowSelected--;
-  //  [self performSegueWithIdentifier:@"showRecipeDetail" sender:self];
+  //  NSLog(@"%d",indexPath.row);
+}
 
-}/*
-
+/*
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     NSString *sectionName;
     switch (section)

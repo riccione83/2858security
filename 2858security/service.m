@@ -34,18 +34,22 @@
     {
         foto.image = [UIImage imageNamed:@"co.jpg"];
         description.text = desc0;  //radiovigilanza
+        lblTitle.text = @"Centrale Operativa";
     }
     else if(_serviceSelected == 1) {
          foto.image = [UIImage imageNamed:@"radioall.jpg"];
         description.text = desc1; //videovigilanza
+        lblTitle.text = @"Radio vigilanza";
     }
     else if (_serviceSelected == 2) {
          foto.image = [UIImage imageNamed:@"video.jpg"];
         description.text =desc2;
+        lblTitle.text = @"Video sorveglianza";
     }
     else if (_serviceSelected == 3) {
          foto.image = [UIImage imageNamed:@"sat.jpg"];
         description.text = desc3;
+        lblTitle.text = @"Servizi satellitari";
     }
    /*else if (_serviceSelected == 4) {
         description.text = desc3; //@"Satellitari";

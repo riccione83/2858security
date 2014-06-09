@@ -12,6 +12,7 @@
 @interface service : UIViewController {
     IBOutlet UITextView *description;
     IBOutlet UIImageView *foto;
+    IBOutlet UILabel *lblTitle;
     
     NSString *desc1;
     NSString *desc2;

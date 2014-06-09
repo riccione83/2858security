@@ -18,6 +18,7 @@
 @synthesize onOffExtern;
 @synthesize impiantoPresente;
 @synthesize description;
+@synthesize preventivoView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -52,7 +53,7 @@
     NSLog(@"TAP2");
     [UIView animateWithDuration:0.5 animations:^{
         CGAffineTransform trasform = CGAffineTransformMakeTranslation(0, -180);
-        description.transform = trasform;
+        preventivoView.transform = trasform;
     }];
 }
 
@@ -62,7 +63,7 @@
    // [description respondsToSelector:nil];
     [UIView animateWithDuration:0.5 animations:^{
         CGAffineTransform trasform = CGAffineTransformMakeTranslation(0, -200);
-        description.transform = trasform;
+        preventivoView.transform = trasform;
     }];
 }
 
@@ -73,7 +74,7 @@
     [numOfRoom resignFirstResponder];
     [UIView animateWithDuration:0.5 animations:^{
         CGAffineTransform trasform = CGAffineTransformMakeTranslation(0, 0);
-        description.transform = trasform;
+        preventivoView.transform = trasform;
     }];
 }
 

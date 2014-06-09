@@ -20,7 +20,7 @@
 }
 
 
-- (void)torchOnOff: (BOOL) onOff;
+- (BOOL)torchOnOff: (BOOL) onOff;
 -(IBAction)setTorch:(id)sender;
 -(IBAction)returnToMainView:(id)sender;
 
