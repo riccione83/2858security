@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIImageView *img2858;
+@property (strong, nonatomic) IBOutlet UIImageView *imgBackground;
 
 @end

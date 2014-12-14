@@ -111,7 +111,8 @@
     
     cell.backgroundView = [[UIView alloc] initWithFrame:cell.bounds];
     cell.textLabel.text = [_services objectAtIndex:indexPath.row];
-    //cell.imageView.image = [UIImage imageNamed:@"play.png"];
+    
+    cell.backgroundColor = [UIColor clearColor];
     return cell;
 }
 
